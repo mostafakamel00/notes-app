@@ -1,0 +1,34 @@
+.head {
+  h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    color: #676fa3;
+  }
+}
+.form {
+  .row {
+    form {
+      .title {
+        label {
+        }
+        input {
+        }
+      }
+      .desc {
+        label {
+        }
+        textarea {
+          resize: none;
+        }
+      }
+      button {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}

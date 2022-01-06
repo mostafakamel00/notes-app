@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+// regular style toast
+@import "~ngx-toastr/toastr";
+
+//dashboard admin
+@import "~assets/css/dashboard.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  font-family: "Cairo", sans-serif;
+}

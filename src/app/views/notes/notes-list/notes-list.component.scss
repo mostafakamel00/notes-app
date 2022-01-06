@@ -1,0 +1,46 @@
+.note {
+  .parent-note {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+    .search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      input {
+        outline: none;
+        min-height: 40px;
+        border: 2px solid #ccc;
+        width: 220px;
+      }
+      button {
+        min-height: 40px;
+        border-radius: 0;
+      }
+    }
+    .news {
+      padding: 11px 14px;
+      background: white;
+      border-radius: 5px;
+      border: 2px dotted #ccc;
+
+      h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 25px;
+      }
+      p {
+        line-height: 1.7;
+      }
+    }
+  }
+}
+
+/////mediaQuery
+
+@media screen and(max-width:768px) {
+  .note .parent-note .search {
+    margin-top: 5rem;
+  }
+}

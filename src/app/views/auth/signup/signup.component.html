@@ -1,0 +1,18 @@
+<div class="signup">
+  <h2>Please Sign Up</h2>
+  <div class="form">
+    <input
+      type="text"
+      class="my-2 d-block"
+      placeholder="first name"
+      autofocus
+    />
+    <input type="text" class="my-2 d-block" placeholder="last name" />
+    <input type="email" class="my-2 d-block" placeholder="email" />
+    <input type="password" class="d-block" placeholder="password" />
+    <button class="btn btn-primary my-3">Signup</button>
+  </div>
+  <h5 class="create my-3">
+    I have Account Already <a [routerLink]="['/auth/login']">Login</a>
+  </h5>
+</div>

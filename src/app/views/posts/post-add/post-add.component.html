@@ -1,0 +1,53 @@
+<div class="head">
+  <div class="container">
+    <h2 class="">Add New Post</h2>
+  </div>
+</div>
+
+<div class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form [formGroup]="addForm" (submit)="onsubmit()">
+          <div class="form-group title">
+            <label for="postTitle">Title</label>
+            <input
+              formControlName="title"
+              type="text"
+              name="postTitle"
+              id="postTitle"
+              placeholder="Enter Title"
+              class="form-control"
+              autofocus
+            />
+            <div *ngIf="f.title.errors" class="alert text-danger">
+              <div *ngIf="submited && f.title.errors.required">
+                Title Is Required
+              </div>
+            </div>
+          </div>
+          <div class="form-group desc">
+            <label for="postDescription">Description</label>
+            <textarea
+              formControlName="description"
+              name="postDescription"
+              id="postDescription"
+              rows="6"
+              class="form-control"
+              placeholder="Enter Description"
+            ></textarea>
+            <div
+              *ngIf="submited && f.description.errors"
+              class="alert text-danger"
+            >
+              <div *ngIf="f.description.errors.required">
+                Description Is Required
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+$maincol: #004085;
+
+.login {
+  h2 {
+    letter-spacing: 15px;
+    padding: 30px 0;
+    font-weight: 700;
+    color: $maincol;
+  }
+  .form {
+    input {
+      width: 50%;
+      margin: 0 auto;
+      outline: none;
+      border: 2px solid #f6f6f6;
+      border-radius: 10px;
+      padding: 7px 14px;
+    }
+    button {
+      width: 25%;
+    }
+  }
+  h5 {
+    a {
+    }
+  }
+}
